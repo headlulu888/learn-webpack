@@ -29,6 +29,9 @@ module.exports = {
             filename: 'style.css'
         })
     ],
+    resolve: {
+        extensions: ['.js', '.ts']
+    },
     module: {
         rules: [
             {
@@ -55,7 +58,7 @@ module.exports = {
                 ]
             },
             { 
-                test: /\.js$/, 
+                test: /\.(js|ts)$/, 
                 exclude: /node_modules/, 
                 loader: "babel-loader" 
             }
