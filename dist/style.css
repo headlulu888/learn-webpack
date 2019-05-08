@@ -6,7 +6,7 @@ header {
      padding: 0;
      box-sizing: border-box;
  }
- 
+
  .box {
      width: 600px;
      margin: 0 auto;
@@ -24,4 +24,7 @@ header {
 .box-text {
   margin-bottom: 20px;
 }
+
+hr {
+  margin: 20px; }
 
