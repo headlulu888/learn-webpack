@@ -16,6 +16,10 @@ module.exports = {
             // new UglifyJsPlugin()
         ]
     },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        port: 4200
+    },
     plugins: [
         new HTMLPlugin({
             filename: 'index.html',
