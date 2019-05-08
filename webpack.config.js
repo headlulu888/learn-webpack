@@ -38,6 +38,14 @@ module.exports = {
                     'css-loader'
                 ]
             },
+            {
+                test: /\.less$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'less-loader'
+                ]
+            },
             { 
                 test: /\.js$/, 
                 exclude: /node_modules/, 
